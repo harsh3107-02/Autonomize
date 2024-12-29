@@ -1,0 +1,78 @@
+.repository-card {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 15px;
+  max-width: 350px;
+  min-width: 280px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  border: none;
+}
+
+.repository-card-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.repository-image {
+  margin-right: 15px;
+}
+
+.repository-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+}
+
+.repository-details {
+  flex: 1;
+  padding-left: 2px;
+}
+
+.repository-details h3 {
+  font-weight: bold;
+  color: blue;
+  margin: 0;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.repository-details p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .repository-card {
+    max-width: 100%;
+  }
+
+  .repository-details h3 {
+    font-size: 16px;
+  }
+
+  .repository-image img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .repository-details h3 {
+    font-size: 14px;
+  }
+
+  .repository-image img {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,77 @@
+.repository-detail-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .repository-card {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .repository-left {
+    width: 45%;
+  }
+  
+  .repository-left img {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .repository-left .verified {
+    display: flex;
+    align-items: center;
+  }
+  
+  .repository-left .verified span {
+    border: 2px solid #00c853;
+    background-color: #00c853;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 15px;
+    color: #00c853;
+  }
+  
+  .repository-left h4 {
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .repository-left p {
+    color: blue;
+    width: 280px;
+  }
+  
+  .repository-right {
+    width: 45%;
+  }
+  
+  .repository-right h4 {
+    color: grey;
+    margin-bottom: '10px';
+  }
+  
+  .repository-right h1 {
+    margin: 0;
+    margin-bottom: '10px';
+  }
+  
+  .repository-right a button {
+    background-color: '#00c853';
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: '5px';
+  }
+  
+  .repository-right p {
+    margin: 10px 0;
+  }
+  
+  .repository-back-link {
+    color: #007bff;
+  }

@@ -1,0 +1,44 @@
+.followers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.follower-card {
+  /* background: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  margin: 10px;
+  width: 300px;
+  transition: transform 0.2s;
+}
+
+.follower-card:hover {
+  transform: translateY(-3px);
+}
+
+.follower-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.follower-info {
+  flex-grow: 1;
+}
+
+.follower-title {
+  /* color: lightblue; */
+  margin: 0;
+}
+
+.follower-description {
+  color: #555;
+  font-size: 14px;
+}
