@@ -77,7 +77,7 @@ const FollowersPage = () => {
               ))}
             </div>
           ) : (
-            <p>No followers found or fetching data...</p>
+            <p>No follower found or fetching data...</p>
           )}
         </div>
       </div>
