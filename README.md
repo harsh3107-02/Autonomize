@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Autonomize
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, responsive, and feature-packed web application to explore GitHub profiles, repositories, and followers with a professional UI design.
 
-## Available Scripts
+## Features ✨
 
-In the project directory, you can run:
+- 🔍 **Search GitHub Profiles** — Easily search and retrieve GitHub users' public information.
+- 🗂️ **Repository List** — View a clean, grid-based layout of repositories with descriptions and approval checkmarks.
+- ✅ **Approval Indicators** — Green checkmarks signify valid repositories.
+- 📈 **Detailed Repositories** — Navigate to individual GitHub repositories and explore their details like stars, forks, etc.
+- 🧑‍🤝‍🧑 **Followers Overview** — Browse through the followers of any GitHub user dynamically.
+- 💻 **Responsive & Modern UI** — Seamlessly works on desktop and mobile devices.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo 🚀
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Live Application Demo](https://your-live-demo-link.com) — Click here to explore the live demo of this project.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works 🛠️
 
-### `npm run build`
+### 1. Search Functionality
+- Enter a valid GitHub username in the search box on the homepage.
+- Get real-time data on repositories and followers for that user.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Repository List
+- The repositories are displayed in a clean **grid-based UI**, inspired by professional layouts.
+- For each repository:
+  - Name and description are dynamically displayed.
+  - A **green checkmark** indicates approval.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Followers Page
+- View the followers of the GitHub user with a clean list view.
+- Navigate easily between repositories, followers, and back to the Home page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Tech Stack 🌐
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend**: [React.js](https://reactjs.org/), [React Router](https://reactrouter.com/), [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- **API**: [GitHub REST API](https://docs.github.com/en/rest) for fetching user data, repositories, and followers.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started 🧑‍💻
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites:
 
-## Learn More
+Make sure you have the following installed:
+- **Node.js** (Download at [https://nodejs.org](https://nodejs.org)).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation Steps:
 
-### Code Splitting
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/github-repository-explorer.git
+   cd github-repository-explorer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Install the dependencies:
+   ```bash
+   npm install
+3. Start the development server:
+   ```bash
+   npm start
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure 📂
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```plaintext
+src/
+├── components/               
+│   ├── Header/            
+│   ├── RepositoryCard/    
+│        
+│
+├── hooks/                    
+│   ├── useFetch.js           
+│
+├── pages/                    
+│   ├── HomePage/
+|   ├── FollowerCard/     
+│   ├── RepositoryListPage/ 
+│   ├── FollowersPage/  
+│   ├── ErrorPage      
+│
+├── services/                 
+│   ├── githubService.js     
+│
+├── styles/                   
+│   ├── RepositoryListPage.css
+│
+├── App.js                    
+├── index.js                  
